@@ -1,0 +1,222 @@
+/* do you know where you are? you're in the general font and margin setting part of the CSS, baby. */
+
+body {
+
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: small;
+	background: #ccc;
+}
+
+/* structural considerations paid for by the following */
+
+#wrap {
+	width: 990px; 
+	margin-right: auto; margin-left: auto; margin-top: 10px;
+	/* background: url(images/wrap_bg.gif) repeat-y 70% 0; */
+	background: #fff;
+	padding: 10px;
+
+}
+
+#content {
+	float: left;
+	width: 68.5%;
+	line-height: 1.6em;
+	color: #000;
+	background: #fff;
+	margin-top: 10px;
+}
+
+#sidebar {
+	float: right;
+	width: 27.5%;
+	line-height: 1.5em;
+	background: #efefef;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0px 10px 0px 10px;
+}
+
+#footer {
+	clear: both;
+	background: #fff;
+	border-top: #ddd 1px solid;
+
+
+}
+
+/* header, so everyone knows where they're at and why they should be bored and compelled to leave */
+
+#header {
+	background: #990000;
+}
+
+#header h1 {
+	margin: 0;
+	font-family: Georgia, serif;
+	font-size: 205%;
+	letter-spacing: -.05em;
+	font-weight: normal;
+	color: #fff;
+	padding: 20px 5px 5px 25px;
+}
+
+#header h1 span {
+	font-size: 55%;
+	color: #ddd;
+	font-weight: normal;
+	font-family: Georgia, serif;
+	letter-spacing: 0em;
+	padding-left: 5px;
+}
+
+/* navigation, so for those that do stick around know how to find their way around my crummy site */
+
+#navcontainer {
+	margin-top: 7px;
+/*	border-top: 3px solid #730000; */
+	overflow: hidden;
+}
+
+#navcontainer ul
+{
+	padding-left: 0;
+	margin: 0;
+	background-color: #464646;
+	color: #fff;
+	float: left;
+	width: 100%;
+	font-family: Georgia, helvetica, sans-serif;
+}
+
+#navcontainer li { display: inline; }
+
+#navcontainer li a
+{
+	padding: 0.5em 1em;
+	background-color: #464646;
+	color: #fff;
+	text-decoration: none;
+	font-weight: normal;
+	float: left;
+	border-right: 1px solid #666;
+}
+
+#navcontainer ul li a:hover, #navcontainer ul li a:active
+{
+	background: #333;
+	color: #fff;
+}
+
+#navcontainer li#n-active a { background: #fff; color: #990000; }
+
+#navcontainer li#n-active a:active, #navcontainer li#n-active a:hover { text-decoration: underline; }
+
+#navcontainer li#n-ua a { 
+	background: #730000; 
+	color: #fff;
+}
+
+#navcontainer li#n-ua a:active, #navcontainer li#n-ua a:hover {
+	background: #fff;
+	color: #990000;
+}
+
+/* general styles for the #content float, so that it's not too ugly */
+
+#content h2 {
+	font-family: "Trebuchet MS", Georgia, serif;
+	font-size: 150%;
+	color: #990000;
+
+}
+
+#content a {
+	color: #990000;
+}
+
+#content a:hover, #content a:active {
+	color: #666;
+}
+
+
+#content p img {
+	float: right;
+	border: 1px #999 solid;
+	padding: 2px;
+	margin: 8px;
+}
+
+#content span {
+	margin-left: 18px;
+	font-weight: bold;
+	display: inline;
+	border-bottom: 1px dotted #999;
+}
+
+#content ol { 
+	margin-top: 0;
+}
+
+#content ol li { 
+	list-style-type: decimal-leading-zero;
+	margin-left: 10px;
+}
+#content ol span {
+	margin-left: -18px;
+}
+
+/* general styles for the #sidebar float because, hell, why not? */
+
+#sidebar h3 {
+	color: #990000;
+	font-family: Georgia, "Trebuchet MS", serif;
+	font-size: 130%;
+	margin-bottom: 0;
+}
+
+#sidebar a {
+	font-weight: normal;
+	color: #990000;
+	text-decoration: none;
+}
+
+#sidebar a:hover, #sidebar a:active {
+	border-bottom: #999 1px solid;
+	color: #990000;
+}
+
+hr.hr { width: 90%; margin-left: auto; margin-right: auto; }
+
+#sidebar ul li { margin-left: -35px; display: inline; }
+
+#sidebar ul li p { margin-top: 0; margin-left: -35px;  }
+
+#sidebar ul li a:link, #sidebar ul li a:visited { border-bottom: 1px #b9c1bd solid; }
+
+#sidebar ul li a:active, #sidebar ul li a:hover { color: #333; background: none; border-bottom: 1px #ccc solid; }
+
+#sidebar ol li { 
+	margin-left: -10px;
+	list-style-type: decimal-leading-zero;
+ }
+
+#sidebar ol li ul li {
+	display: block;
+}
+
+/* #footer stuff... it's finally over. It's finally over. */
+
+#footer p { 
+	font-size: 85%;
+	font-family: Georgia, "Trebuchet MS", serif;
+	padding: 2px 2px;
+	color: #333;
+	margin-left: 15px;
+}
+
+#footer a {
+	color: #990000;
+	text-decoration: none;
+	font-weight: normal;
+}
